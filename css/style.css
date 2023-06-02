@@ -1,0 +1,116 @@
+*  { margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+list-style: none;
+align-items: center;
+justify-content: center;
+/* box-sizing: border-box ; */
+}
+/* COSITAS DEL HEADER  */
+header{
+ 
+  background-color: rgb(203, 25, 2);
+  border-style: inset;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*MITAD IZQUIERDA HEADER */
+.logo{display: flex; padding:5px; align-items:baseline}
+.logo img{height:50px;}
+
+/* MITAD DERECHA HEADER */
+header a{
+  color: black;
+  text-decoration: none;
+  padding-right: 15px;
+  font-size: x-large;
+}
+/* FIN FORMATO HEADER  */
+
+.fotomicro{min-height: 300px;min-width: 300px;
+max-width:600px;max-height:600px;}
+.contenedor-texto{min-height: 300px;min-width: 300px;
+border-style: solid;
+padding: 10px;
+margin:10px;
+font-size:larger;}
+
+/* Formato titulos*/
+h2{display:flex; align-items: center;justify-content: center;text-decoration: underline;font-size: xx-large;}
+h3{display:flex;padding-top: 20px; align-items: center;justify-content: center;text-decoration: underline;font-size: x-large;}
+
+main{align-items: center;
+  background-color: rgb(171, 171, 171);
+}
+main div{display:flex; justify-content:center;align-items: center;}
+
+/* MEDIA QUERY PARA DISPOSITIVOS VERTICALES*/
+@media(max-width:700px){
+  header{flex-direction: column;}
+  main div{flex-direction: column;font-size: large;}
+  .logo{font-size: small;display:inline-flex}
+  .logo img{height:25px;}
+  header a{padding:2px;}
+  .fotomicro{max-height:100%;max-width: 100%;}
+  .contenedor-texto{max-height:100%;max-width: 100%;}
+  .grid-container{
+  justify-content:space-between;
+    padding-top: 100px;
+    display:grid;
+    grid-template-columns: 20px 200px;
+    grid-template-rows: 50px 300px 500px 300px 500px;
+   }
+   .grid-item{max-width: 60%;}
+
+}
+
+/*GRID FAQ*/
+.grid-container{
+  padding-top: 50px;
+  display:grid;
+  grid-template-columns: 20px 800px;
+  grid-template-rows: 50px 60px 100px 100px 200px;
+  
+}
+.grid-item{justify-content:left;}
+
+/*GRID RADEON 6000 RYZEN 7000*/
+.grid-containerdos{
+  padding-top: 50px;
+  display:grid;
+  grid-template-columns: 200px 200px 200px 200px 200px ;
+  grid-template-rows: 50px 200px 200px;
+  
+}
+.grid-itemdos img{  max-height: 200px;max-width: 200px;}
+.grid-itemdos{justify-content:center;max-width: 200px;max-height:200px ;border-style:inset;}
+
+/* GRID RADEON 7000*/
+.grid-containergpu{
+  padding-top: 0px;
+
+  display: grid;
+  grid-template-columns: 220px 220px 220px  ;
+  grid-template-rows: 50px 200px 200px;
+  justify-content: center;
+}
+
+/*ESTILIZADO HYPERLINKS*/
+a:hover{border-style: double; font-weight: bold;color:rgb(138, 138, 138);}
+
+/*FOOTER*/
+footer{
+  background-color: rgb(77, 76, 76);
+  color: white;
+  height:80px;
+  position: sticky;
+  bottom:0
+}
+footer img{height:50px;}
+
+/*ESTILIZADO FORMULARIO CONTACTO*/
+.formulario form div{width:400px;
+  justify-content: center;
+  align-items: center;
+display:flex;}
